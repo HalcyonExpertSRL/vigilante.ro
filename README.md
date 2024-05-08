@@ -1,6 +1,6 @@
 # vigilante.ro Portfolio
 
-![vigilante.ro Logo](media/img/vigilante_large.jpg)
+![vigilante.ro Logo](media/logo/vigilante_large.jpg)
 
 Welcome to vigilante.ro's portfolio repository! This project serves as a showcase for the web development work done by vigilante.ro.
 
