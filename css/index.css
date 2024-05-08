@@ -11,6 +11,35 @@ body {
 
 /* nav bar */
 header {
+  margin: 15px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 15px;
+  text-decoration: none;
+  font-size: 21px;
+  font-weight: 500;
+  color: #060000;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav img {
+  height: 50px;
+  width: 225px;
 }
 
 /* carrusel */
