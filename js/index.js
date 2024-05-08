@@ -1,21 +1,31 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const carouselInner = document.querySelector(".carousel-inner");
-  const carouselItems = document.querySelectorAll(".carousel-item");
-  const totalItems = carouselItems.length;
-  let currentIndex = 0;
+const carousel = document.querySelector('.brands .carousel-inner');
+const carouselItems = Array.from(carousel.children);
+const carouselItemWidth = carouselItems[0].offsetWidth;
+const carouselWidth = carousel.offsetWidth;
+const scrollDistance = carouselItemWidth * carouselItems.length - carouselWidth;
 
-  function nextSlide() {
-    currentIndex++;
-    if (currentIndex >= totalItems) {
-      currentIndex = 0;
-    }
-    updateCarousel();
-  }
+let scrollPosition = 0;
 
-  function updateCarousel() {
-    const offset = -currentIndex * carouselItems[0].offsetWidth;
-    carouselInner.style.transform = `translateX(${offset}px)`;
-  }
+function scrollTo(distance) {
+  carousel.scrollTo({
+    left: scrollPosition + distance,
+    behavior: 'smooth'
+  });
+}
 
-  setInterval(nextSlide, 3000); // Cambia cada 3 segundos (3000ms)
-});
+function handleScroll(event) {
+  const delta = event.wheelDelta || -event.deltaY;
+  const distance = Math.round(delta / 100 * carouselItemWidth);
+  scrollTo(distance);
+}
+
+carousel.addEventListener('wheel', handleScroll);
+
+function initializeCarousel() {
+  scrollTo(0);
+  carousel.addEventListener('transitionend', () => {
+    scrollPosition = carousel.scrollLeft;
+  });
+}
+
+initializeCarousel();

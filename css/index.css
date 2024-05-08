@@ -1,23 +1,86 @@
-/* imports */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-/* carrusel */
-.carousel {
-  width: 100%;
-  overflow: hidden;
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.carousel-inner {
-  display: flex;
-  transition: transform 0.5s ease;
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
 }
 
-.carousel-item {
-  flex: 0 0 auto;
-  width: 100%;
+.logo {
+    margin: 0 auto;
 }
 
-.carousel-item img {
-  max-width: 100%;
-  height: auto;
+.logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.stay-safe {
+    background-color: #f0f0f0;
+    padding: 2em;
+    text-align: center;
+}
+
+.stay-safe h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 700; /* use bold font weight for headings */
+}
+
+.stay-safe img {
+    width: 20px;
+    height: 20px;
+}
+
+.partners {
+    background-color: #fff;
+    padding: 2em;
+}
+
+.partners h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 700; /* use bold font weight for headings */
+}
+
+.partners ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.partners li {
+    margin-right: 20px;
+}
+
+.partners img {
+    width: 50px;
+    height: 50px;
 }
