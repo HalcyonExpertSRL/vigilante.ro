@@ -5,13 +5,19 @@ body {
     padding: 0;
 }
 header {
-    background-color: #333;
+    background-color: #FFC700;
     color: #fff;
     padding: 20px;
     text-align: center;
+    border-color: #000000;
+    border: 10px;
 }
 header h1 {
     margin: 0;
+}
+nav img{
+    height:30mm ;
+    width: 30mm ;
 }
 nav ul {
     list-style-type: none;
@@ -23,6 +29,10 @@ nav ul li {
 }
 nav ul li a {
     color: #fff;
+    text-decoration: none;
+}
+nav ul li :hover {
+    color: #0022ff;
     text-decoration: none;
 }
 section {
