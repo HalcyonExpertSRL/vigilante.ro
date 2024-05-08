@@ -44,37 +44,49 @@ nav img {
 
 /* start section */
 .start {
-  display: flex;
   max-width: 100%;
   max-height: 100%;
+  display: flex;
 }
 
 .logo {
   height: 150px;
   width: 625px;
+  margin: 75px;
+  margin-top: 350px;
+  margin-bottom: 350px;
 }
 
 .start-text-img {
+  display: flex;
+  justify-content: space-between;
   height: 150px;
   width: 300px;
-}
-/* carrusel */
-.carousel {
-  width: 100%;
-  overflow: hidden;
+  background-color: #ffd600;
 }
 
+.text_up {
+  position: absolute;
+  margin-top: 0;
+}
+
+/* carrusel */
 .carousel-inner {
   display: flex;
   transition: transform 0.5s ease;
 }
 
+.carousel {
+  /* Ancho fijo del carrusel */
+  overflow: hidden; /* Ocultar contenido que se desborda */
+}
+
 .carousel-item {
-  flex: 0 0 auto;
-  width: 100%;
+  width: 600px; /* Ancho fijo del carrusel */
+  text-align: center; /* Centrar imágenes dentro del carrusel */
 }
 
 .carousel-item img {
-  max-width: 100%;
-  height: auto;
+  max-width: 100%; /* Ajustar imágenes al ancho del contenedor */
+  height: auto; /* Mantener la proporción de aspecto */
 }
