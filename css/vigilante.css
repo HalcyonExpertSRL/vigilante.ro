@@ -49,30 +49,13 @@ section ul {
     padding-left: 20px;
 }
 
-/* Estilos para productos y proyectos */
-.producto,
-.proyecto {
+/* Estilos para productos */
+.product {
     margin-bottom: 40px;
 }
 
-.producto h3,
-.proyecto h3 {
+.product h3 {
     margin-top: 0;
-}
-
-.producto a,
-.proyecto a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.producto a:hover,
-.proyecto a:hover {
-    background-color: #555;
 }
 
 /* Estilos para el footer */
@@ -81,9 +64,6 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
 }
 
 footer p {
