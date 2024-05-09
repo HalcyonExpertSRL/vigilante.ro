@@ -287,7 +287,7 @@ body {
 /*end header section*/
 /* slider section */
 .slider_section {
-  
+
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -322,7 +322,6 @@ body {
   font-style: normal;
   text-transform: uppercase;
   color: #ffffff;
-
 }
 
 .slider_section .detail-box h1 span {
@@ -331,7 +330,11 @@ body {
   font-weight: 700;
   font-style: normal;
   font-size:75px;
-  
+}
+
+.stay-reversed {
+  display: inline-block;
+  transform: scaleY(-1);
 
 }
 
@@ -942,13 +945,6 @@ body::-webkit-scrollbar-thumb {
   background-color: #333132;    /* color of the scroll thumb */
   /* creates padding around scroll thumb */
 }
-
-.stay-reversed {
-  display: inline-block;
-  /*Aseguraqueeltextosepuedatransformar*/transform: scaleY(-1);
-
-}
-
 
 .down-arrow {
   position: absolute;
