@@ -287,6 +287,7 @@ body {
 /*end header section*/
 /* slider section */
 .slider_section {
+  
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -315,14 +316,23 @@ body {
 }
 
 .slider_section .detail-box h1 {
+  font-size:75px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
   text-transform: uppercase;
-  font-size: 3rem;
   color: #ffffff;
-  font-weight: 600;
+
 }
 
 .slider_section .detail-box h1 span {
   color: #ffd600;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size:75px;
+  
+
 }
 
 .slider_section .detail-box p {
@@ -932,3 +942,47 @@ body::-webkit-scrollbar-thumb {
   background-color: #333132;    /* color of the scroll thumb */
   /* creates padding around scroll thumb */
 }
+
+.stay-reversed {
+  display: inline-block;
+  /*Aseguraqueeltextosepuedatransformar*/transform: scaleY(-1);
+
+}
+
+
+.down-arrow {
+  position: absolute;
+  top: calc(100vh - 80px);
+  left: calc(50% - 14px);
+  width: 0;
+  height: 30px;
+  border: 2px solid;
+  border-radius: 2px;
+  animation: jumpInfinite 1.5s infinite;
+}
+
+.down-arrow:after {
+  content: " ";
+  position: absolute;
+  top: 12px;
+  left: -10px;
+  width: 16px;
+  height: 16px;
+  border-bottom: 4px solid;
+  border-right: 4px solid;
+  border-radius: 4px;
+  transform: rotateZ(45deg);
+}
+
+@keyframes jumpInfinite {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 20px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
