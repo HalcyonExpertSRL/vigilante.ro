@@ -322,6 +322,7 @@ body {
   font-style: normal;
   text-transform: uppercase;
   color: #ffffff;
+  
 }
 
 .slider_section .detail-box h1 span {
@@ -450,7 +451,7 @@ body {
   display: inline-block;
   padding: 10px 35px;
   background-color: #ffd600;
-  color: #ffffff;
+  color: #333132;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border: 1px solid transparent;
@@ -501,7 +502,7 @@ body {
   display: inline-block;
   padding: 8px 35px;
   background-color: #ffd600;
-  color: #ffffff;
+  color: #333132;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border: 1px solid transparent;
@@ -537,7 +538,7 @@ body {
 }
 
 .client_section .box .img-box {
-  width: 145px;
+  width: 150px;
 }
 
 .client_section .box .img-box img {
@@ -954,7 +955,6 @@ body::-webkit-scrollbar-thumb {
   left: calc(50% - 14px);
   width: 0;
   height: 30px;
-  border: 2px solid;
   border-radius: 2px;
   animation: jumpInfinite 1.5s infinite;
 }
