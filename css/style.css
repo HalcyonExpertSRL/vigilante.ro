@@ -148,7 +148,7 @@ body {
 }
 
 .header_top {
-  background-color: #1c1c1c;
+  background-color: #FFD600;
   padding: 15px 0;
 }
 
@@ -174,7 +174,7 @@ body {
 
 .header_top .contact_link-container a i {
   font-size: 20px;
-  color: #f1db25;
+  color: #FFD600;
   margin-right: 5px;
 }
 
@@ -202,28 +202,10 @@ body {
   -webkit-transition: all .2s;
   transition: all .2s;
 }
-
-.custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
-  background-color: #1c1c1c;
+.custom_nav-container .navbar-nav .nav-item:hover .nav-link {
+  color: #FFD600;
 }
 
-a,
-a:hover,
-a:focus {
-  text-decoration: none;
-}
-
-a:hover,
-a:focus {
-  color: initial;
-}
-
-.btn,
-.btn:focus {
-  outline: none !important;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
 
 .navbar-brand {
   display: -webkit-box;
@@ -240,7 +222,7 @@ a:focus {
 
 .navbar-brand span {
   font-weight: bold;
-  color: #ffffff;
+  color: #FFD600;
   font-size: 24px;
 }
 
