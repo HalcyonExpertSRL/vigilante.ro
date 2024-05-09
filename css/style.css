@@ -919,10 +919,12 @@ body {
 .card {
   position: relative;
   height: 500px;
+  width: 800px;
 }
 
 .image {
   position: absolute;
+  align-self: center;
   top: 0;
   left: 0;
   width: 100%;
