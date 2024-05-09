@@ -19,3 +19,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
   setInterval(nextSlide, 3000); // Cambia cada 3 segundos (3000ms)
 });
+
