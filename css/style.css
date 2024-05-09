@@ -52,7 +52,7 @@ body {
   content: "";
   width: 40px;
   height: 7px;
-  background-color: #f1db25;
+  background-color: #ffd600;
   border-radius: 10px;
   position: absolute;
   bottom: 0;
@@ -322,7 +322,7 @@ body {
 }
 
 .slider_section .detail-box h1 span {
-  color: #f1db25;
+  color: #ffd600;
 }
 
 .slider_section .detail-box p {
@@ -346,7 +346,7 @@ body {
   display: inline-block;
   padding: 10px 35px;
   background-color: #ffffff;
-  color: #000000;
+  color: #333132;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border: 1px solid transparent;
@@ -361,8 +361,8 @@ body {
 .slider_section .detail-box .btn-box .btn-2 {
   display: inline-block;
   padding: 10px 35px;
-  background-color: #f1db25;
-  color: #ffffff;
+  background-color: #ffd600;
+  color: #333132;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border: 1px solid transparent;
@@ -370,8 +370,8 @@ body {
 
 .slider_section .detail-box .btn-box .btn-2:hover {
   background-color: transparent;
-  border-color: #f1db25;
-  color: #f1db25;
+  border-color: #ffd600;
+  color: #ffd600;
 }
 
 .slider_section .img-box {
@@ -401,7 +401,7 @@ body {
   height: 20px;
   border-radius: 100%;
   text-align: center;
-  background-color: #f1db25;
+  background-color: #ffd600;
   opacity: 1;
   border: none;
   margin: 0 4px;
@@ -436,7 +436,7 @@ body {
 .about_section .detail-box a {
   display: inline-block;
   padding: 10px 35px;
-  background-color: #f1db25;
+  background-color: #ffd600;
   color: #ffffff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -446,12 +446,12 @@ body {
 
 .about_section .detail-box a:hover {
   background-color: transparent;
-  border-color: #f1db25;
-  color: #f1db25;
+  border-color: #ffd600;
+  color: #ffd600;
 }
 
 .service_section {
-  background-color: #1c1c1c;
+  background-color: #000000;
 }
 
 .service_section .heading_container {
@@ -487,7 +487,7 @@ body {
 .service_section .box .detail-box a {
   display: inline-block;
   padding: 8px 35px;
-  background-color: #f1db25;
+  background-color: #ffd600;
   color: #ffffff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -497,8 +497,8 @@ body {
 
 .service_section .box .detail-box a:hover {
   background-color: transparent;
-  border-color: #f1db25;
-  color: #f1db25;
+  border-color: #ffd600;
+  color: #ffd600;
 }
 
 .client_section {
@@ -583,7 +583,7 @@ body {
 
 .client_section .carousel-control-prev:hover,
 .client_section .carousel-control-next:hover {
-  background-color: #f1db25;
+  background-color: #ffd600;
 }
 
 .client_section .carousel-control-prev {
@@ -599,6 +599,7 @@ body {
 .contact_section {
   position: relative;
   color: #ffffff;
+  background-color: #000000;
 }
 
 .contact_section .row {
@@ -659,7 +660,7 @@ body {
 .contact_section .contact_form-container button {
   display: inline-block;
   padding: 10px 60px;
-  background-color: #f1db25;
+  background-color: #ffd600;
   color: #ffffff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -670,8 +671,8 @@ body {
 
 .contact_section .contact_form-container button:hover {
   background-color: transparent;
-  border-color: #f1db25;
-  color: #f1db25;
+  border-color: #ffd600;
+  color: #ffd600;
 }
 
 .contact_bg_box {
@@ -742,7 +743,7 @@ body {
   padding: 25px 15px;
   text-align: center;
   bottom: 0;
-  background-color: rgba(28, 28, 28, 0.75);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .team_section .btn-box {
@@ -758,7 +759,7 @@ body {
 .team_section .btn-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #f1db25;
+  background-color: #ffd600;
   color: #ffffff;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -767,8 +768,8 @@ body {
 
 .team_section .btn-box a:hover {
   background-color: transparent;
-  border-color: #f1db25;
-  color: #f1db25;
+  border-color: #ffd600;
+  color: #ffd600;
 }
 
 .info_section {
@@ -854,7 +855,7 @@ body {
   outline: none;
   border: none;
   color: #ffffff;
-  background: #f1db25;
+  background: #ffd600;
   border-radius: 30px;
   margin-top: 15px;
   text-transform: uppercase;
@@ -918,4 +919,16 @@ body {
 
 .image:hover {
   opacity: 0; /* Al pasar el ratón por encima, se hace invisible */
+}
+body::-webkit-scrollbar {
+  width: 6px;          /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #ffd600;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #333132;    /* color of the scroll thumb */
+  /* creates padding around scroll thumb */
 }
