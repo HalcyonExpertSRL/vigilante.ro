@@ -1092,3 +1092,85 @@ body::-webkit-scrollbar-thumb {
 .testimonial-slider .next {
   right: 10px;
 }
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact-title {
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  width: fit-content;
+  border: 2px solid;
+  border-radius: 15px;
+}
+
+.titulo-form {
+  text-align: center;
+}
+
+form {
+  backdrop-filter: blur(10px);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #ffd600;
+  color: #fff;
+  padding: 10px 20px;
+  border: 2px solid #ffd600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffd600;
+}
+
+#show-form {
+  display: none;
+}
+
+#show-form:checked + #contact-title + #contact-form {
+  display: block;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid #ffd600;
+  padding: 30px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+#contact-form {
+  display: none;
+}
+
+#show-form:checked + #contact-title {
+  background-color: #060000;
+  color: white;
+}
+
+#show-form:not(:checked) + #contact-title {
+  background-color: #060000;
+  color: white;
+}
+
+#show-form:checked + #contact-title + #contact-form button {
+  display: block;
+}

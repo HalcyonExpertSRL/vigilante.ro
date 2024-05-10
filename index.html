@@ -452,7 +452,7 @@
       </div>
       <div class="testimonial-slide">
         <div class="img-box">
-          <img src="images/client.png" alt="" />
+          <img src="media/icons/stars.svg" alt="" />
         </div>
         <p class="testimonial-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan
@@ -462,7 +462,7 @@
       </div>
       <div class="testimonial-slide">
         <div class="img-box">
-          <img src="images/client.png" alt="" />
+          <img src="media/icons/stars.svg" alt="" />
         </div>
         <p class="testimonial-text">
           Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
@@ -484,20 +484,32 @@
         <div class="">
           <div class="row">
             <div class="col-md-7 mx-auto">
-              <form action="#">
-                <div class="card">
-                  <img
-                    src="media/img/contact1.png"
-                    class="image"
-                    alt="Image 1"
-                  />
-                  <img
-                    src="media/img/contact2.png"
-                    class="image"
-                    alt="Image 2"
-                  />
-                </div>
-              </form>
+              <div class="contact-container">
+                <input type="checkbox" id="show-form" />
+                <label for="show-form" id="contact-title">Get In touch</label>
+                <form id="contact-form">
+                  <h4 class="titulo-form">
+                    ¿Necesitas de nuestros servicios?<br />
+                    Envíanos un mensaje.
+                  </h4>
+
+                  <label for="nombre">Nombre:</label>
+                  <input type="text" id="nombre" name="nombre" required />
+
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required />
+
+                  <label for="mensaje">Mensaje:</label>
+                  <textarea
+                    id="mensaje"
+                    name="mensaje"
+                    rows="4"
+                    required
+                  ></textarea>
+
+                  <button type="submit">Enviar</button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
