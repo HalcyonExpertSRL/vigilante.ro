@@ -1142,3 +1142,35 @@ button[type="submit"]:hover {
   background-color: #333132;
   color: #ffd600;
 }
+
+/* Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+/* Styling */
+.sliderlogo {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 960px;
+}
+
+.slide-tracking {
+  animation: scroll 40s infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+
+.slidelogo {
+  height: 100px;
+  width: 250px;
+}
