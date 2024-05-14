@@ -19,4 +19,8 @@ if ($conn->query($sql) === TRUE) {
 
 // Close connection
 $conn->close();
+
+// Redirige de vuelta a la página HTML después de haber enviado los datos
+header("Location: ../index.html");
+exit;
 ?>
