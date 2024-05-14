@@ -9,6 +9,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Site Metas -->
     <meta name="keywords" content="" />
     <meta name="description" content="" />
@@ -355,97 +356,7 @@
 
     <!-- end service section -->
 
-    <!-- client section
-
-    <section class="client_section layout_padding">
-      <div class="container">
-        <div class="heading_container heading_center">
-          <h2>What is says our clients</h2>
-        </div>
-        <div
-          id="carouselExampleControls"
-          class="carousel slide"
-          data-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="box">
-                <div class="img-box">
-                  <img src="media/img/client.png" alt="" />
-                </div>
-                <div class="detail-box">
-                  <h4>Juan Jose</h4>
-                  <img
-                    class="stars"
-                    src="media/icons/stars.svg"
-                    alt="Descripción de la imagen"
-                  />
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="box">
-                <div class="img-box">
-                  <img src="images/client.png" alt="" />
-                </div>
-                <div class="detail-box">
-                  <h4>Minim Veniam</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="box">
-                <div class="img-box">
-                  <img src="images/client.png" alt="" />
-                </div>
-                <div class="detail-box">
-                  <h4>Minim Veniam</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel_btn-box">
-            <a
-              class="carousel-control-prev"
-              href="#carouselExampleControls"
-              role="button"
-              data-slide="prev"
-            >
-              <i class="fa fa-angle-left" aria-hidden="true"></i>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a
-              class="carousel-control-next"
-              href="#carouselExampleControls"
-              role="button"
-              data-slide="next"
-            >
-              <i class="fa fa-angle-right" aria-hidden="true"></i>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-  -->
+    <!-- client section -->
     <div class="testimonial-slider">
       <div class="heading_container heading_center">
         <h2>What is says our clients</h2>
@@ -482,24 +393,23 @@
           <h2>Get In touch</h2>
         </div>
         <div class="">
-          <div class="row">
-            <div class="col-md-7 mx-auto">
-              <form action="#">
-                <div class="card">
-                  <img
-                    src="media/img/contact1.png"
-                    class="image"
-                    alt="Image 1"
-                  />
-                  <img
-                    src="media/img/contact2.png"
-                    class="image"
-                    alt="Image 2"
-                  />
-                </div>
-              </form>
-            </div>
-          </div>
+          <form action="form/recieve.php" method="post">
+            <ul>
+              <li>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" required />
+              </li>
+              <li>
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="user_email" required />
+              </li>
+              <li>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message" required></textarea>
+              </li>
+            </ul>
+            <button type="submit">Submit</button>
+          </form>
         </div>
       </div>
     </section>
