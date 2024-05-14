@@ -1,14 +1,6 @@
 <?php
-// Include database credentials
+// Include database connection
 require_once('db_credentials.php');
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
 
 // Fetch form data
 $name = $_POST['user_name'];
@@ -16,8 +8,15 @@ $email = $_POST['user_email'];
 $message = $_POST['user_message'];
 
 // Prepare SQL statement to insert data
-$sql = "INSERT INTO users (name, email, message) VALUES ('$name', '$email', '$message')";
+$sql = "INSERT INTO users (name, mail, message) VALUES ('$name', '$email', '$message')";
 
 // Execute SQL statement
 if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully
+    echo "New record created successfully";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+// Close connection
+$conn->close();
+?>
