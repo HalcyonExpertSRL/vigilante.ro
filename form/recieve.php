@@ -16,7 +16,7 @@ $email = $_POST['user_email'];
 $message = $_POST['user_message'];
 
 // Prepare SQL statement to insert data
-$sql = "INSERT INTO your_table_name (name, email, message) VALUES ('$name', '$email', '$message')";
+$sql = "INSERT INTO users (name, email, message) VALUES ('$name', '$email', '$message')";
 
 // Execute SQL statement
 if ($conn->query($sql) === TRUE) {

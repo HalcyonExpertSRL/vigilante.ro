@@ -393,23 +393,43 @@
           <h2>Get In touch</h2>
         </div>
         <div class="">
-          <form action="form/recieve.php" method="post">
+          <form id="myForm" action="form/receive.php" method="post">
             <ul>
-              <li>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="user_name" required />
-              </li>
-              <li>
-                <label for="mail">Email:</label>
-                <input type="email" id="mail" name="user_email" required />
-              </li>
-              <li>
-                <label for="msg">Message:</label>
-                <textarea id="msg" name="user_message" required></textarea>
-              </li>
+                <li>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name" required />
+                </li>
+                <li>
+                    <label for="mail">Email:</label>
+                    <input type="email" id="mail" name="user_email" required />
+                </li>
+                <li>
+                    <label for="msg">Message:</label>
+                    <textarea id="msg" name="user_message" required></textarea>
+                </li>
             </ul>
-            <button type="submit">Submit</button>
-          </form>
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+        <script>
+        function submitForm() {
+            var form = document.getElementById("myForm");
+            var formData = new FormData(form);
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "form/receive.php", true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        // Success! You can display a success message here if needed
+                        console.log("Form submitted successfully!");
+                    } else {
+                        // Error occurred during form submission
+                        console.error("Error:", xhr.status);
+                    }
+                }
+            };
+            xhr.send(formData);
+        }
+        </script>
         </div>
       </div>
     </section>
