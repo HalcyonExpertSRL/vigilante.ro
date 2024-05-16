@@ -68,6 +68,10 @@
     margin-top: 35px;
   }
 
+  .mainscreenlogo {
+    display: none;
+  }
+
   .stay-reversed {
     display: block;
     transform: none;
