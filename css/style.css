@@ -327,7 +327,6 @@ body {
 .slider_section .detail-box {
   width: 100%;
   line-height: 24px;
-  margin: 0px -251px 0px 0px;
 }
 
 .slider_section .detail-box h1 {
@@ -356,7 +355,8 @@ body {
 }
 
 .slider_section .detail-box p {
-  margin-top: 25px;
+  font-size: 16px;
+  margin-top: 15px;
 }
 
 .slider_section .detail-box .btn-box {
@@ -404,14 +404,16 @@ body {
   color: #ffd600;
 }
 
-.slider_section .img-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.img-box img {
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
-.slider_section .img-box img {
-  width: 100%;
+.mainscreenlogo {
+  float: right;
+  padding-right: 300px;
 }
 
 .slider_section .idicator_container {
@@ -936,11 +938,6 @@ body {
 
 .footer_section a {
   color: rgba(254, 254, 255, 0.7);
-}
-
-.mainscreenlogo {
-  float: right;
-  padding-right: 300px;
 }
 
 .card {
