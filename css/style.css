@@ -46,6 +46,7 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   padding-bottom: 10px;
+  text-align: left;
 }
 
 .heading_container h2::before {
@@ -443,6 +444,7 @@ body {
   background-color: #ffffff;
 }
 
+/* about */
 .about_section .row {
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -482,6 +484,7 @@ body {
   color: #ffd600;
 }
 
+/* service */
 .service_section {
   background-color: #000000;
 }
@@ -1152,22 +1155,25 @@ button[type="submit"]:hover {
 
 /* Styling */
 .sliderlogo {
-  background: white;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
   height: 100px;
   margin: auto;
   overflow: hidden;
   position: relative;
-  width: 960px;
+  width: 1000px;
 }
 
 .slide-tracking {
-  animation: scroll 40s infinite;
+  animation: scroll 25s infinite;
   display: flex;
-  width: calc(250px * 14);
+  width: calc(300px * 14);
 }
 
 .slidelogo {
   height: 100px;
   width: 250px;
+}
+
+.slide {
+  height: 100px;
+  padding-right: 15px;
 }
